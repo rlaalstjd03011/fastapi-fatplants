@@ -14,8 +14,8 @@ router = APIRouter(
     responses={404: {"description": "Error in calling kegg pathway API"}},
 )
 
-@router.get('/api/chatgpt/')
-async def getresponse_chatgpt(content,role="user"):
+@router.get('/api/chatgpt')
+async def getresponse_chatgpt(text,role="user"):
     
     # completion = client.chat.completions.create(
     # model="gpt-3.5-turbo",
@@ -24,6 +24,6 @@ async def getresponse_chatgpt(content,role="user"):
     # temperature = 0.8)
 
     # return completion
-    return "ok"
+    return "_test test"
     
 

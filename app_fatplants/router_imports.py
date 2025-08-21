@@ -4,6 +4,7 @@ from chatgpt import chat
 from networks import goenrichment
 from contact_us import send_email
 from aralipform import form
+from Citation import Citation
 
 routers=[
     species,
@@ -11,5 +12,6 @@ routers=[
     chat,
     goenrichment,
     send_email,
-    form
+    form,
+    Citation
 ]
