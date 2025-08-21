@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 try:
     from .citation_retrieval_module_python import CitationRetrievalService
-except ImportError:  # 직접 실행 시
+except ImportError:
     from citation_retrieval_module_python import CitationRetrievalService
 
 import os
